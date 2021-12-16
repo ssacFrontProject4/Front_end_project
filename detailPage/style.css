@@ -1,0 +1,137 @@
+.Header {
+  border: 1px solid green none;
+  width: 100vw;
+  height: 10vh;
+  background-color: #ffc349;
+}
+
+.logo1 {
+  height: 10vh;
+  width: 15vh;
+  border-radius: 20px;
+}
+
+.food_img {
+  border: 1px solid red none;
+  width: 100vw;
+  height: 41vh;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.photo_box {
+  width: 19vw;
+  height: 40vh;
+  background-color: white none;
+  position: relative;
+  border: 1px solid red none;
+  float: left;
+  margin: 10px;
+}
+
+.restaurant_map {
+  border: 1px solid red;
+  width: 25vw;
+  height: 40vh;
+  float: right;
+  margin-right: 2vw;
+}
+
+.restaurant_detail {
+  border: 1px solid red none;
+  width: 50vw;
+  height: 40vh;
+  margin-left: 15vw;
+  margin-bottom: 3vw;
+}
+
+.detail_title {
+  font-size: 1.5vw;
+  margin-right: 40vw;
+}
+
+.button_stars {
+  width: 3vw;
+  height: 2vw;
+}
+
+.menu_info2 {
+  font-size: 1vw;
+  text-align: left;
+  line-height: 1.5;
+  vertical-align: middle;
+  padding-bottom: 0.5vh;
+}
+
+.menu_info3 {
+  font-size: 1vw;
+  text-align: middle;
+  line-height: 1.5;
+  vertical-align: middle;
+  padding-bottom: 0.5vh;
+  margin-left: 1vw;
+}
+
+.restaurant_review {
+  border: 1px solid red none;
+  width: 50vw;
+  height: 35vh;
+  margin-left: 15vw;
+  margin-bottom: 3vw;
+}
+
+.review_title {
+  font-size: 1.5vw;
+  margin-right: 35vw;
+}
+
+.button_review1 {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.button_review2 {
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.button_review1:hover {
+  color: red;
+}
+
+.button_review2:hover {
+  color: blue;
+}
+
+.textarea {
+  width: 45vw;
+  height: 2vw;
+  font-size: 1vw;
+  margin-bottom: 3vw;
+  margin-top: 1vw;
+}
+
+.review_list {
+  font-size: 1.1vw;
+  color: black;
+}
+
+.submit {
+  width: 3vw;
+  height: 2vw;
+}
+
+.footer {
+  margin-top: 2vw;
+  margin-left: 10vw;
+}
+
+.address {
+  display: inline;
+  font-size: 6vh;
+  margin-left: 1vw;
+}
+
+.logo2 {
+  height: 8vh;
+}
