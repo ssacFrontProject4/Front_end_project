@@ -75,7 +75,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url("../public/image/near/china/1.jpg");
+  background: url("ps.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -85,12 +85,12 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-color: var(--left-bg-color); */
+  background-color: var(--left-bg-color);
 }
 
 .split.right {
   right: 0;
-  background: url("../public/image/near/china/not_koku.jpg");
+  background: url("xbox.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -100,7 +100,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-color: var(--right-bg-color); */
+  background-color: var(--right-bg-color);
 }
 
 .split.right,
