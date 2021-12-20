@@ -11,12 +11,16 @@ li {
 
 /* HEADER */
 header {
-  background-image: url(../image/Homeplus.png);
+  background-image: url(/public/image/Homeplus.png);
   overflow: hidden;
   position: relative;
   text-align: center;
   background-position: center;
   background-size: cover;
+}
+header .header-logoicon {
+  position: relative;
+  margin-top: 5px;
 }
 header .top {
   position: relative;
