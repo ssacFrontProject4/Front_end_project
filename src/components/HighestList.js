@@ -9,11 +9,29 @@ class HighestList extends Component {
   }
 
   render() {
-    const { which } = this.props;
+    var { mode } = this.props;
+    const { list } = this.props;
     var lists = [];
-    var data = this.props;
+
+    for (let key in list) {
+      if (key === mode) {
+        list[key].forEach((arrayElement) => {
+          lists.push(
+            <div className="arrayList">
+              <a href="">
+                {" "}
+                {arrayElement}
+                <img
+                  src={process.env.PUBLIC_URL + `/image/${arrayElement}.png`}
+                ></img>
+              </a>
+            </div>
+          );
+        });
+      }
+    }
     return (
-      <div>
+      <div className="Top">
         <header className="High">
           <a
             href="#"
@@ -41,12 +59,12 @@ class HighestList extends Component {
 
           {/* {this.isNear() && <div> near </div>}
         {!this.isNear() && <div> not near </div>} */}
+
+          {/* {which === "near" && <div></div>}
+          {which !== "near" && <div></div>} */}
         </header>
 
-        <section>
-          {which === "near" && <div></div>}
-          {which !== "near" && <div></div>}
-        </section>
+        <section>{lists}</section>
       </div>
     );
   }

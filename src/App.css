@@ -24,7 +24,7 @@
 body {
   font-family: "Roboto", sans-serif;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: 0;
 }
 
@@ -82,7 +82,7 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url("../public/image/near/near.jpg");
+  background: url("../public/image/near.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -97,7 +97,7 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url("../public/image/homeplus/homeplus.jpg");
+  background: url("../public/image/homeplus.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

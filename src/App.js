@@ -8,55 +8,42 @@ class App extends Component {
     super(props);
     this.state = {
       mode: "split",
-      selected_location: "homeplus",
-      near: ["korea", "china", "etc"],
-      homeplus: ["korea", "japan", "china", "fastfood", "cafe", "etc"],
+      list: {
+        near: ["korea", "china", "etc"],
+        homeplus: ["korea", "japan", "china", "fastfood", "cafe", "etc"],
+      },
     };
   }
   render() {
-    console.log("App render");
     if (this.state.mode === "split") {
       return (
         <div className="App">
           <Index
             goHighestListN={function () {
               this.setState({
-                mode: "HighestList",
-                selected_location: "near",
+                mode: "near",
               });
             }.bind(this)}
             goHighestListH={function () {
               this.setState({
-                mode: "HighestList",
-                selected_location: "homeplus",
+                mode: "homeplus",
               });
             }.bind(this)}
           ></Index>
         </div>
       );
-    } else if (this.state.mode === "HighestList") {
-      return this.state.selected_location === "near" ? (
+    } else
+      return (
         <HighestList
           goHome={function () {
             this.setState({
               mode: "split",
             });
           }.bind(this)}
-          which={this.state.selected_location}
-          near={this.state.near}
-        ></HighestList>
-      ) : (
-        <HighestList
-          goHome={function () {
-            this.setState({
-              mode: "split",
-            });
-          }.bind(this)}
-          which={this.state.selected_location}
-          homeplus={this.state.homeplus}
+          mode={this.state.mode}
+          list={this.state.list}
         ></HighestList>
       );
-    }
   }
 }
 

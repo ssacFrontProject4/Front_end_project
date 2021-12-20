@@ -5,7 +5,6 @@ class Index extends Component {
     return (
       <>
         <head>
-          <link rel="stylesheet" href="style.css" />
           <title>Split Landing Page</title>
         </head>
         <body>
@@ -38,8 +37,6 @@ class Index extends Component {
               </a>
             </div>
           </div>
-
-          <script src="script.js"></script>
         </body>
       </>
     );
