@@ -9,8 +9,8 @@ class App extends Component {
     this.state = {
       mode: "split",
       list: {
-        near: ["korea", "china", "etc"],
-        homeplus: ["korea", "japan", "china", "fastfood", "cafe", "etc"],
+        near: ["korea", "japan", "china", "fastfood", "cafe"],
+        homeplus: ["korea", "japan", "china", "fastfood", "cafe", "FoodCourt"],
       },
     };
   }

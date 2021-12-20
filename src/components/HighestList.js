@@ -18,12 +18,11 @@ class HighestList extends Component {
         list[key].forEach((arrayElement) => {
           lists.push(
             <div className="arrayList">
-              <a href="">
-                {" "}
-                {arrayElement}
+              <a className="atag" href="">
                 <img
                   src={process.env.PUBLIC_URL + `/image/${arrayElement}.png`}
                 ></img>
+                <span className="image_on_text">{arrayElement}</span>
               </a>
             </div>
           );
