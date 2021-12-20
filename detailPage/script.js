@@ -22,3 +22,21 @@ function removeActiveClasses() {
         photo_box.classList.remove('active')
     })
 }
+
+// 검색창 설정
+const searchEl = document.querySelector(".search");
+const searchInputEl = searchEl.querySelector("input");
+
+searchEl.addEventListener("click", function () {
+  searchInputEl.focus();
+});
+
+searchInputEl.addEventListener("focus", function () {
+  searchEl.classList.add("focused");
+  searchInputEl.setAttribute("placeholder", "지역, 식당 또는 음식");
+});
+
+searchInputEl.addEventListener("blur", function () {
+  searchEl.classList.remove("focused");
+  searchInputEl.setAttribute("placeholder", "");
+});

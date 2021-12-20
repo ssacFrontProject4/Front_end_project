@@ -4,6 +4,7 @@
     <meta charset="UTF_8" />
     <meta http_equiv="X_UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device_width, initial_scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css" />
     <!-- 카카오 지도 api 스크립트
       <script
@@ -12,16 +13,31 @@
     ></script> -->
     <title>상세 페이지 | 오늘 뭐 먹지?</title>
   </head>
+
   <body class="body">
-    <header class="Header">
-      <img class="logo1" src="./logo1.jpg" alt="로고1" />
-      <div class="search_button">
-        <input type="search" name="search" id="search" class="search" />
-        <button type="submit" class="search_button">
-          <img class="search_img" src="search.png" alt="검색사진" />검색
-        </button>
+    <header class="header">
+      <div class="top">
+        <a href="/" class="header-logo">
+          <img src="logo.png" class="header-logoicon"></img>
+        </a>
+        <div class="sub-menu">
+          <div class="search">
+            <input type="text" id="keyword" />
+            <div class="material-icons">search</div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="/">홈</a>
+            </li>
+            <li>
+              <a href="/">카테고리 리스트</a>
+            </li>
+            <li>
+              <a href="/">상세 페이지</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <!--추후에 홈으로 가는 링크 추가할 것-->
     </header>
 
     <!-- 사진 들어갈 이미지 창 -->
@@ -54,7 +70,7 @@
         <header>
           <div class="reataurant_detail_wrap">
             <!-- 가게 이름 -->
-            <span class="detail_title"> 고 구 려 </span>
+            <span class="detail_title" > <a href="/" class="restaurnt_title">가게 이름</a></span>
             <!-- 별점 시스템 -->
             <div class="star_rating">
               <input type="radio" id="5-stars" name="rating" value="5" />
@@ -137,13 +153,13 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div>
         <img class="logo2" src="./logo2.png" alt="로고2" />
         <h3 class="address">서울 특별시 금천구 가산로 70 SeSAC 금천 캠퍼스</h3>
         <!-- <img class="sesac_map" "src="" alt="새싹 지도"> -->
       </div>
-    </footer>
+    </footer> -->
     <script src="script.js"></script>
   </body>
 </html>

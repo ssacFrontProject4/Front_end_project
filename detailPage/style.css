@@ -2,44 +2,122 @@
   box-sizing: border-box;
 }
 
-.Header {
-  border: 1px solid green none;
-  width: 100vw;
+.header {
+  overflow: hidden;
+}
+
+header .top {
+  position: relative;
+  background-color: #ff3111;
   height: 10vh;
-  background-color: #ffc349;
+  z-index: 990;
+  box-sizing: border-box;
 }
 
-.logo1 {
-  height: 10vh;
-  width: 15vh;
-  border-radius: 20px;
-  position: absolute;
-}
-
-.search {
-  width: 25vw;
-  height: 5vh;
-  position: absolute;
-  font-size: 1.5vw;
-  margin-top: 0.5vw;
-  margin-left: 2vw;
-}
-
-.search_button {
-  width: 5vw;
-  height: 5vh;
-  margin-top: 0.5vw;
-  margin-left: 27vw;
+header .top img {
   float: left;
+  width: 8vw;
+  height: 10vh;
+}
+
+header .sub-menu {
+  display: flex;
+  height: 1px;
+}
+
+header .sub-menu ul.menu {
+  position: relative;
+  display: flex;
+  height: 1px;
+}
+
+header .sub-menu ul.menu li {
+  position: relative;
+  right: 0;
+  list-style: none;
+  height: 1px;
+}
+
+header .sub-menu ul.menu li::before {
+  content: "";
+  width: 1px;
+  height: 10vh;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 1vh;
+  margin: auto;
+}
+
+header .sub-menu ul.menu li:first-child:before {
+  display: none;
+}
+
+header .sub-menu ul.menu li a {
+  position: relative;
   font-size: 1vw;
-  font-weight: bold;
-  color: #ffc349;
+  padding-bottom: 50px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: right;
+  bottom: 10px;
+  margin: 10px;
 }
 
-.search_img {
+header .sub-menu ul.menu li a:hover {
+  color: black;
+}
+
+header .sub-menu .search {
+  margin-top: 3vh;
+  height: 3vh;
+  margin-left: 2vw;
+  position: relative;
+}
+
+header .sub-menu .search input {
   width: 2vw;
-  height: 2vw;
-  float: left;
+  height: 4vh;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 1vw;
+  transition: width 0.4s;
+}
+
+header .sub-menu .search input:focus {
+  width: 20vw;
+}
+header .sub-menu .search .material-icons {
+  height: 2vh;
+  width: 1vw;
+  position: absolute;
+  top: 7px;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: 0.4s;
+  font-size: 3vh;
+}
+
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
+}
+
+/* 백그라운드에 이미지 넣기 */
+.body {
+  /* background-image: url(../public/background/b4.jpg); */
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .food_img {
@@ -48,6 +126,7 @@
   height: 41vh;
   display: flex;
   margin-bottom: 5vw;
+  border-radius: 50px;
 }
 
 .photo_box {
@@ -115,7 +194,7 @@
 }
 
 .star_rating {
-  border: solid 1px #fff;
+  border: solid 1px #fff none;
   font-size: 2vw;
   height: 2vw;
   padding: 0 0.2em;
