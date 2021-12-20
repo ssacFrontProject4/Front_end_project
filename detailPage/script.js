@@ -6,3 +6,19 @@
 // };
 // var map = new kakao.maps.Map(container, options);
 
+
+//expanding-card
+const photo_boxs = document.querySelectorAll('.photo_box')
+
+photo_boxs.forEach(photo_box => {
+    photo_box.addEventListener('click', () => {
+        removeActiveClasses()
+        photo_box.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    photo_boxs.forEach(photo_box => {
+        photo_box.classList.remove('active')
+    })
+}

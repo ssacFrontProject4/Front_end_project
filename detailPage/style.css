@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .Header {
   border: 1px solid green none;
   width: 100vw;
@@ -42,18 +46,50 @@
   border: 1px solid red none;
   width: 100vw;
   height: 41vh;
-  position: relative;
+  display: flex;
   margin-bottom: 5vw;
 }
 
 .photo_box {
-  width: 19vw;
-  height: 40vh;
-  background-color: white none;
-  position: relative;
-  border: 1px solid red none;
-  float: left;
+  height: 50vh;
+  background-size: 55vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
   margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.photo_box h3 {
+  font-size: 1.5vw;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.photo_box.active {
+  flex: 5;
+}
+
+.photo_box.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .food_img {
+    width: 100vw;
+  }
+
+  .photo_box:nth-of-type(4),
+  .photo_box:nth-of-type(5) {
+    display: none;
+  }
 }
 
 .restaurant_map {

@@ -10,7 +10,6 @@
       type="text/javascript" 
       src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a16db64706e6a7dc96b10e4b2ded42a6."
     ></script> -->
-    <script src="script.js"></script>
     <title>상세 페이지 | 오늘 뭐 먹지?</title>
   </head>
   <body class="body">
@@ -27,31 +26,21 @@
 
     <!-- 사진 들어갈 이미지 창 -->
     <div class="food_img">
-      <img
-        class="photo_box"
-        src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f180_180&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200208_195%2F15811299757569vVsg_JPEG%2FKlemo1EfjbYeOKn9VT4_3BfP.jpg"
-        alt="사진1"
-      />
-      <img
-        class="photo_box"
-        src="https://lh5.googleusercontent.com/p/AF1QipPn5NDZjNxyr1T3LaSSmCkcLkpZ2JEkOby7i1hW=s1330-k-no"
-        alt="사진2"
-      />
-      <img
-        class="photo_box"
-        src="https://lh5.googleusercontent.com/p/AF1QipP0AYNzZo9Vmzk6SIVf1fuyr6Te7S80cxtn1uh4=s1794-k-no"
-        alt="사진3"
-      />
-      <img
-        class="photo_box"
-        src="https://mp-seoul-image-production-s3.mangoplate.com/464158/2025527_1627981030894_49258?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80"
-        alt="사진4"
-      />
-      <img
-        class="photo_box"
-        src="https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MDNfMTY0%2FMDAxNjI3OTE2NTU2NjEy.AhO02i8b3_WzTT0aUySj7cyY2x6cNu7OKg2S6_I8wV0g.w2TNMnbV2Ng8EeUWT4VzHWm6pNfPUofcsYA1g_d3aI0g.JPEG.peacefulsea1%2F%25B0%25ED%25B1%25B8%25B7%25C11.jpg"
-        alt="사진5"
-      />
+      <div class="photo_box active" style="background-image: url('https://search.pstatic.net/common/?autoRotate=true&quality=95&type=f180_180&src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200208_195%2F15811299757569vVsg_JPEG%2FKlemo1EfjbYeOKn9VT4_3BfP.jpg')">
+        <h3>가게 입구</h3>
+      </div>
+      <div class="photo_box" style="background-image: url('https://lh5.googleusercontent.com/p/AF1QipPn5NDZjNxyr1T3LaSSmCkcLkpZ2JEkOby7i1hW=s1330-k-no')">
+        <h3>짬뽕</h3>
+      </div>
+      <div class="photo_box" style="background-image: url('https://lh5.googleusercontent.com/p/AF1QipP0AYNzZo9Vmzk6SIVf1fuyr6Te7S80cxtn1uh4=s1794-k-no')">
+        <h3>군만두</h3>
+      </div>
+      <div class="photo_box" style="background-image: url('https://mp-seoul-image-production-s3.mangoplate.com/464158/2025527_1627981030894_49258?fit=around|512:512&crop=512:512;*,*&output-format=jpg&output-quality=80')">
+        <h3>식사</h3>
+      </div>
+      <div class="photo_box" style="background-image: url('https://search.pstatic.net/common/?autoRotate=true&quality=95&type=w750&src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA4MDNfMTY0%2FMDAxNjI3OTE2NTU2NjEy.AhO02i8b3_WzTT0aUySj7cyY2x6cNu7OKg2S6_I8wV0g.w2TNMnbV2Ng8EeUWT4VzHWm6pNfPUofcsYA1g_d3aI0g.JPEG.peacefulsea1%2F%25B0%25ED%25B1%25B8%25B7%25C11.jpg')">
+        <h3>메뉴판</h3>
+      </div>
     </div>
 
     <main class="inner">
@@ -155,5 +144,6 @@
         <!-- <img class="sesac_map" "src="" alt="새싹 지도"> -->
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
