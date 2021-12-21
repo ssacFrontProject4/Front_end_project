@@ -177,6 +177,7 @@ header .sub-menu .search.focused .material-icons {
   height: 60vh;
   float: right;
   margin-right: 2vw;
+  margin-top: 2vw
 }
 
 .map_img {
