@@ -173,10 +173,15 @@ header .sub-menu .search.focused .material-icons {
 
 .restaurant_map {
   border: 1px solid red none;
-  width: 25vw;
-  height: 40vh;
+  width: 27vw;
+  height: 60vh;
   float: right;
   margin-right: 2vw;
+}
+
+.map_img {
+  width: 25vw;
+  height: 55vh;
 }
 
 .restaurant_detail {
