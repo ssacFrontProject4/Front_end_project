@@ -9,7 +9,7 @@ class App extends Component {
     this.state = {
       mode: "split",
       list: {
-        near: ["korea", "japan", "china", "fastfood", "cafe"],
+        Ssac: ["korea", "japan", "china", "fastfood", "cafe"],
         homeplus: ["korea", "japan", "china", "fastfood", "cafe", "FoodCourt"],
       },
     };
@@ -21,7 +21,7 @@ class App extends Component {
           <Index
             goHighestListN={function () {
               this.setState({
-                mode: "near",
+                mode: "Ssac",
               });
             }.bind(this)}
             goHighestListH={function () {
